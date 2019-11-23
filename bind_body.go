@@ -30,11 +30,14 @@ func bindRequestBodyTag(r *http.Request, fieldName string, fieldValue reflect.Va
 	case "application/x-yaml", "application/yaml", "text/yaml":
 		decoder := yaml.NewDecoder(r.Body)
 		decoder.SetStrict(false)
-		if err := decoder.Decode(fieldValue); err != nil {
+		vptr := reflect.New(fieldValue.Type())
+		if err := decoder.Decode(vptr.Interface()); err != nil {
 			return errors.Wrap(err, "decoding failed").
 				AddTag(ErrTagHTTPStatusCodeKey, http.StatusBadRequest).
 				AddTag("fieldName", fieldName).
 				AddTag("contentType", r.Header.Get("Content-Type"))
+		} else {
+			fieldValue.Set(vptr.Elem())
 		}
 
 	case "application/json", "text/json":
@@ -53,11 +56,14 @@ func bindRequestBodyTag(r *http.Request, fieldName string, fieldValue reflect.Va
 
 	case "application/xml", "text/xml":
 		decoder := xml.NewDecoder(r.Body)
-		if err := decoder.Decode(fieldValue); err != nil {
+		vptr := reflect.New(fieldValue.Type())
+		if err := decoder.Decode(vptr.Interface()); err != nil {
 			return errors.Wrap(err, "decoding failed").
 				AddTag(ErrTagHTTPStatusCodeKey, http.StatusBadRequest).
 				AddTag("fieldName", fieldName).
 				AddTag("contentType", r.Header.Get("Content-Type"))
+		} else {
+			fieldValue.Set(vptr.Elem())
 		}
 
 	default:
