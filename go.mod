@@ -6,8 +6,8 @@ require (
 	github.com/go-chi/chi v4.0.2+incompatible
 	github.com/go-playground/locales v0.13.0 // indirect
 	github.com/go-playground/universal-translator v0.16.0 // indirect
-	github.com/golangly/errors v0.0.1
-	github.com/golangly/log v0.0.1
+	github.com/golangly/errors v0.2.1
+	github.com/golangly/log v0.2.0
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/uuid v1.1.1
 	github.com/kr/pretty v0.1.0 // indirect

@@ -27,10 +27,10 @@ github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5y
 github.com/golang/protobuf v1.3.1/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/protobuf v1.3.2 h1:6nsPYzhq5kReh6QImI3k5qWzO4PEbvbIW2cwSfR/6xs=
 github.com/golang/protobuf v1.3.2/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
-github.com/golangly/errors v0.0.1 h1:FtPbgDPbQGiLJauwBO5kF0c3nCrs7HB71uriNSDva0U=
-github.com/golangly/errors v0.0.1/go.mod h1:svcoXbOmwn3SAYqJ2HTPFB1ZUXzzV6x9X3MGqUsXUd8=
-github.com/golangly/log v0.0.1 h1:o4cw25wU2oTPQKqHKIM5wzvur11OwmtvKMZInxpZu/U=
-github.com/golangly/log v0.0.1/go.mod h1:xkaWqGzWhuwAyGdU7Pscjy5PYP2AG9XsqzIInREQTMs=
+github.com/golangly/errors v0.2.1 h1:rhcrTuW4AuDjcmKtunvLYn+jD71kjWR5WcAnDLQ3y0k=
+github.com/golangly/errors v0.2.1/go.mod h1:rbufAFQnpOY57i0aszPo5PtBu9L1O9AtPRDQSyyFa90=
+github.com/golangly/log v0.2.0 h1:JoIFZ4B9pMHoWFEJBgBv24wPmdGC7cmfbnsmIG0fzao=
+github.com/golangly/log v0.2.0/go.mod h1:q7W/vexSQLVaVIo4lSTg40jESuaTiQiIKJ8YIkd5HI0=
 github.com/google/go-cmp v0.3.0/go.mod h1:8QqcDgzrUqlUb/G2PQTWiueGozuR1884gddMywk6iLU=
 github.com/google/go-cmp v0.3.1 h1:Xye71clBPdm5HgqGwUkwhbynsUJZhDbS20FvLhQ2izg=
 github.com/google/go-cmp v0.3.1/go.mod h1:8QqcDgzrUqlUb/G2PQTWiueGozuR1884gddMywk6iLU=
